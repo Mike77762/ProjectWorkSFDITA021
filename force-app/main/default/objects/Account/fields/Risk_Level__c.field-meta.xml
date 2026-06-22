@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Risk_Level__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Total_Exposure__c  &gt; 150000, &quot;High Risk&quot;,
+  IF(Total_Exposure__c &gt;= 50000, &quot;Medium Risk&quot;,
+    &quot;Low Risk&quot;
+  )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Risk Level</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
