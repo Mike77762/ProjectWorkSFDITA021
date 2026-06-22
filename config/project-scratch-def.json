@@ -1,0 +1,11 @@
+{
+  "orgName": "Bank CRM Scratch Org",
+  "edition": "Developer",
+  "language": "it",
+  "features": ["PersonAccounts"],
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    }
+  }
+}

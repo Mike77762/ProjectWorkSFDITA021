@@ -1,0 +1,21 @@
+.container {
+    padding: 1rem;
+}
+
+.result-box {
+    background-color: #f4f6f9;
+    border-left: 4px solid #0070d2;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+}
+
+.result-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0070d2;
+}
+
+.error-text {
+    color: #c23934;
+}

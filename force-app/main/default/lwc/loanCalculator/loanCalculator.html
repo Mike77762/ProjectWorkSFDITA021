@@ -1,0 +1,38 @@
+<template>
+    <lightning-card title="Loan Calculator" icon-name="standard:currency">
+        <div class="container">
+            <lightning-input 
+                type="number" 
+                label="Capitale Richiesto (€)" 
+                value={capitale}
+                onchange={handleCapitale}>
+            </lightning-input>
+            <lightning-input 
+                type="number" 
+                label="Tasso d'Interesse (%)" 
+                value={tasso}
+                onchange={handleTasso}>
+            </lightning-input>
+            <lightning-input 
+                type="number" 
+                label="Durata (Mesi)" 
+                value={durata}
+                onchange={handleDurata}>
+            </lightning-input>
+            <div class="slds-m-top_medium">
+                <lightning-button 
+                    label="Calcola Rata" 
+                    variant="brand"
+                    onclick={calcolaRata}>
+                </lightning-button>
+            </div>
+            <template if:true={risultato}>
+                <div class="result-box">
+                    <p class="result-text">
+                        Rata Mensile Stimata: €{risultato}
+                    </p>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>
